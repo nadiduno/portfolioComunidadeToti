@@ -1,0 +1,36 @@
+:root{
+    --color1: #fff;
+    --color2: #000;
+    --color3: #1f1f1f;
+    display: flex;
+    justify-content: center;
+  }
+  :focus{
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--color3);
+  }
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  body{
+    background: var(--color2);
+    color:var(--color1);
+    -webkit-font-smoothing: antialiased;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  body,input,textarea,button{
+    font-family:'Roboto', sansserif;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  @media  only screen and ((min-width: 768px)) {
+    body{
+      max-width: 1200px;
+    }
+  }
+  

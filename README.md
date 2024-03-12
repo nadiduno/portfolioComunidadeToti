@@ -12,7 +12,7 @@ Embaixadores da [Toti Diversidade](https://totidiversidade.com.br/) <💜 /> © 
   <img 
     alt="Imagem que apresenta o protótipo do site, o qual é um mini portfólio do github nas cores laranja e roxo e fundo branco"
     src="https://github.com/nadiduno/portfolioComunidadeToti/blob/main/.github/ImgApp.png" 
-    width="30%"
+    width="50%"
   >
   <br />
 </div>

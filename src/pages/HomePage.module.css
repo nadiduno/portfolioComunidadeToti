@@ -1,0 +1,14 @@
+body {
+    position: relative;
+}
+
+.menu,
+.container {
+    width: 100%;
+}
+
+@media ((min-width: 768px)) {
+    .container {
+        grid-template-columns: 25rem 1fr;
+    }
+}
