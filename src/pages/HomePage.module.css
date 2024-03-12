@@ -4,11 +4,8 @@ body {
 
 .menu,
 .container {
-    width: 100%;
+    background-color: var(--color2);
 }
-
-@media ((min-width: 768px)) {
-    .container {
-        grid-template-columns: 25rem 1fr;
-    }
+.footersocial{
+    background-color: var(--color3);
 }
