@@ -22,8 +22,4 @@ Embaixadores da [Toti Diversidade](https://totidiversidade.com.br/) <💜 /> © 
 [Design em Figma](https://www.figma.com/file/RIVIv8xfnWHMV9Pki7P7BP/PortfolioComunidade?type=design&node-id=55-2&mode=design&t=ou26uMKPxWEYfbyc-0) by [Nadi Duno](https://www.linkedin.com/in/nadiduno/) 
 
 
-# Deploy
-Feito com ajuda da plataforma Vercel
-https://portfoliocolab.vercel.app/
-
 
