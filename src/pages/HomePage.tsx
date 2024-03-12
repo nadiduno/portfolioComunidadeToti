@@ -1,3 +1,4 @@
+import { FooterLink } from '../components/FooterLink'
 import { Menu } from '../components/Menu'
 import styles from './HomePage.module.css'
 
@@ -11,7 +12,7 @@ export function HomePage () {
                 <p>Container</p>
             </div>
             <footer className={styles.footersocial}>
-                <>Redes Sociais</>
+                <FooterLink />
             </footer>
         </>
   )
