@@ -1,6 +1,9 @@
-import styles from './ContainerHome.module.css'
 import { PersonalDetails } from './PersonalDetails'
 import { Photo } from './Photo'
+import { ProjectMain } from './ProjectMain'
+import { ProjectSecond } from './ProjectSecond'
+
+import styles from './ContainerHome.module.css'
 
 export function ContainerHome () {
     return(
@@ -10,11 +13,9 @@ export function ContainerHome () {
                 <Photo />
             </div>
             <hr className={styles.verticalline} />
-            <div>
-                Projeto principal
-            </div>
-            <div>
-                Projetos outros
+            <div className={styles.projects}>
+                <ProjectMain />
+                <ProjectSecond />
             </div>
         </header>
     )

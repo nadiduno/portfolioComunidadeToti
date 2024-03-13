@@ -4,12 +4,12 @@ import styles from './Menu.module.css'
 
 export function Menu () {
     return(
-        <main className={styles.menu}>
-            <nav>
+        <>
+            <nav className={styles.menu}>
                 <NavLink to='/' title='Home'>
                     <span>Home</span>
                 </NavLink>
-                <NavLink to='/trabalho' title='meus trabalho'>
+                <NavLink to='/trabalhos' title='meus trabalho'>
                     <span>Meus trabalhos</span>
                 </NavLink>
                 <NavLink to='/contato' title='contato'>
@@ -19,6 +19,6 @@ export function Menu () {
                     <span>Link</span>
                 </NavLink>
             </nav>
-        </main>
+        </>
     )
 }
