@@ -4,6 +4,6 @@
     display: flex;
     align-items: flex-end;
     justify-content: end;
-    padding-right: 2rem;
+    padding-right: 8rem;
     gap: 1.5rem;
 }
