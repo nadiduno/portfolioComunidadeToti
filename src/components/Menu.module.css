@@ -7,3 +7,11 @@
     padding-right: 8rem;
     gap: 1.5rem;
 }
+span{
+    color: var(--color1);
+    opacity: 1;
+}
+span:hover{
+    text-decoration: none; 
+    opacity: 0.5;
+}
