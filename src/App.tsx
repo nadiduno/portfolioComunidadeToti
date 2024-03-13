@@ -1,15 +1,12 @@
-// import { HomePage } from './pages/HomePage'
-import { ContactPage } from './pages/ContactPage'
-// import { LinkPage } from './pages/LinkPage'
+import { BrowserRouter } from 'react-router-dom'
+import { Router } from './Router'
 
 import './global.css'
 
 export function App() {
   return (
-    <>
-      {/* <HomePage /> */}
-      {/* <LinkPage /> */}
-      <ContactPage />
-    </>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   )
 }
