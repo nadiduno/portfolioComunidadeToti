@@ -9,6 +9,7 @@ export function Container () {
                 <PersonalDetails />
                 <Photo />
             </div>
+            <hr className={styles.verticalline} />
             <div>
                 Projeto principal
             </div>
