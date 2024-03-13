@@ -1,10 +1,11 @@
 import style from './Container.module.css'
+import { PersonalDetails } from './PersonalDetails'
 
 export function Container () {
     return(
         <header className={style.container}>
             <div>
-                Dados principais
+                <PersonalDetails />
             </div>
             <div>
                 Projeto principal
