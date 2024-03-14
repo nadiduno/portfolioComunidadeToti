@@ -4,7 +4,7 @@ export function ProjectSecond () {
     return(
         <>
             <div className={styles.container}>
-                Projetos outros
+                {/* Projetos outros */}
             </div>
         </>
     )
