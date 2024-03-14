@@ -35,8 +35,7 @@ O design do Portfólio Colaborativo foi meticulosamente elaborado no Figma por N
 
 # Portfólio Colaborativo Comunidade Toti
 
-![Protótipo do site](![image](https://github.com/nadiduno/portfolioComunidadeToti/assets/144358009/ba750942-b11f-461b-ae29-bc4b15158e8a)
-)
+![Protptipo do Site](https://github.com/nadiduno/portfolioComunidadeToti/assets/144358009/3b5ea807-de3b-4651-b3f9-c815ac4b0584)
 
 Bem-vindo ao repositório do Portfólio Colaborativo da Comunidade Toti! Este é um projeto empolgante que busca promover a diversidade e a inclusão na comunidade de desenvolvimento de software. Aqui, membros da comunidade Toti podem compartilhar seus incríveis portfólios, trocar ideias e inspirar uns aos outros.
 
