@@ -11,3 +11,9 @@
   border: 1px solid var(--color1);
   padding: 1.5rem 3rem;
 }
+
+.wrapperbuttons{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem 7.25rem;
+}

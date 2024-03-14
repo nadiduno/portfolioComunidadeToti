@@ -1,3 +1,4 @@
+import { Buttons } from './Buttons';
 import styles from './ProjectMain.module.css'
 
 const PowerBiDashboard: React.FC = () => {
@@ -21,6 +22,11 @@ export function ProjectMain() {
                     {/* <iframe title="Vendas" width="750" height="498" src="https://app.powerbi.com/view?r=eyJrIjoiMDEwZjJkYzQtYTBmMC00ZWE3LWI5MjktZDJhZTUzODI2NjVhIiwidCI6IjE0YmU1ZTFkLTM2MGYtNDg0Ni1iNGIwLTJlNTkzNzc1NmQwZCJ9" frameborder="1" allowFullScreen="true" /> */}
                     {/*Da erro com o typescript*/}
                     <PowerBiDashboard />
+                    <div className={styles.wrapperbuttons}>
+                      <Buttons />
+                      <Buttons />
+                      <Buttons />
+                    </div>
                 </div>
             </div>
         </>

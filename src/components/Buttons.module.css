@@ -1,0 +1,27 @@
+.buttonsborder{
+    width: 9.5rem;
+    height: 3.5rem;
+    border-color: 1px solid var(--var1);
+    border-radius: 20px 0 20px 0; 
+    border: 1px solid var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    color: var(--color1);
+    opacity: 1;
+    text-decoration: none;
+    
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.1s;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+a:hover{
+    text-decoration: none;
+    filter: drop-shadow(0 0 .75em var(--color3));
+}
