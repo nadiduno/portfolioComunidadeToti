@@ -1,6 +1,3 @@
-import React from 'react';
-// import './RedesSociais.css'; // Importe o arquivo CSS separado
-
 import styles from './RedesSociais.module.css'
 
 interface RedesSociaisProps { }
