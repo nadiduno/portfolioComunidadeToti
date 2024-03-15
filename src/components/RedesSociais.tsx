@@ -1,12 +1,14 @@
 import React from 'react';
-import './RedesSociais.css'; // Importe o arquivo CSS separado
+// import './RedesSociais.css'; // Importe o arquivo CSS separado
+
+import styles from './RedesSociais.module.css'
 
 interface RedesSociaisProps { }
 
 export const RedesSociais: React.FC<RedesSociaisProps> = () => {
     return (
-        <div className="redes-portafolio">
-            <ul className="list-inline redes-gremio">
+        <div className={styles.redesportafolio}>
+            <ul className={styles.listinline}> {/* redes-gremio */}
                 <li>
                     <a href="https://www.facebook.com/" target="_blank" title="Ir a Facebook">
                         Facebook
