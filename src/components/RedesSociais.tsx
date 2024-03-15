@@ -5,6 +5,7 @@ interface RedesSociaisProps { }
 export const RedesSociais: React.FC<RedesSociaisProps> = () => {
     return (
         <div className={styles.redesportafolio}>
+           https://github.com/nadiduno/portfolioComunidadeToti/blob/main/src/assets/bgredes.svg
             <ul className={styles.listinline}> {/* redes-gremio */}
                 <li>
                     <a href="https://www.facebook.com/" target="_blank" title="Ir a Facebook">
