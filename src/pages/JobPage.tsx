@@ -1,6 +1,7 @@
 import { ContainerJob } from '../components/ContainerJob'
 import { FooterLink } from '../components/FooterLink'
 import { Menu } from '../components/Menu'
+import { RedesSociais } from '../components/RedesSociais'
 
 import styles from './HomePage.module.css'
 
@@ -12,6 +13,9 @@ export function JobPage () {
             </main>
             <div className={styles.container}>
                 <ContainerJob />
+            </div>
+            <div>
+                <RedesSociais />
             </div>
             <footer className={styles.footersocial}>
                 <FooterLink />

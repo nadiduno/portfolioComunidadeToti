@@ -1,38 +1,31 @@
 import styles from './RedesSociais.module.css'
+import {FiFacebook, FiInstagram, FiLinkedin, FiYoutube} from 'react-icons/fi'
 
-interface RedesSociaisProps { }
-
-export const RedesSociais: React.FC<RedesSociaisProps> = () => {
-    return (
-        <div className={styles.redesportafolio}>
-           https://github.com/nadiduno/portfolioComunidadeToti/blob/main/src/assets/bgredes.svg
-            <ul className={styles.listinline}> {/* redes-gremio */}
+export function RedesSociais(){
+    return( 
+        <div className={styles.redesPortafolio}>
+            <ul className={styles.listinline}>
                 <li>
-                    <a href="https://www.facebook.com/" target="_blank" title="Ir a Facebook">
-                        Facebook
+                    <a href="linkedin.com/in/" target="_blank" title="Ir a Linkedin">
+                    <FiLinkedin className= {styles.icons} size={25} color='fff'/>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.instagram.com/" target="_blank" title="Ir a Instagram">
-                        Instagram
+                    <FiInstagram className= {styles.icons} size={25} color='fff'/>
                     </a>
                 </li>
                 <li>
-                    <a href="linkedin.com/in/" target="_blank" title="Ir a Linkedin">
-                        Linkedin
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/" target="_blank" title="Ir a Twitter">
-                        Twitter
+                    <a href="https://www.facebook.com/" target="_blank" title="Ir a Facebook">
+                    <FiFacebook className= {styles.icons} size={25} color='fff'/>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.youtube.com/" target="_blank" title="Ir a Youtube">
-                        Youtube
+                    <FiYoutube className= {styles.icons} size={25} color='fff'/>
                     </a>
                 </li>
             </ul>
         </div>
     );
-};
+}

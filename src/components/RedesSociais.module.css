@@ -1,12 +1,11 @@
-.redesportafolio {
-    /* background: url(src\assets\bg-redes.svg) no-repeat; */
-    /* position: fixed;     */
+.redesPortafolio {
+    position: fixed;    
     right: 0;
     top: 50%;
     z-index: 99;
-    /* width: 40px; */
-    /* height: 220px; */
-    /* margin-top: -110px; */
+    width: 40px;
+    height: 220px;
+    margin-top: -110px; 
     padding: 30px;
     display: flex;
     flex-wrap: wrap;
