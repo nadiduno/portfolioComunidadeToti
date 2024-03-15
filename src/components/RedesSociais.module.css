@@ -1,6 +1,7 @@
 .redesportafolio {
-    background: url(/img/new-site/bg-redes.svg) no-repeat;
-    /* position: fixed; */
+    /* background: url(src\assets\bg-redes2.svg) no-repeat; */
+    /* background: url(https://github.com/nadiduno/portfolioComunidadeToti/blob/main/src/assets/bg-redes2.svg?raw=true) no-repeat; */
+    /* position: fixed;     */
     right: 0;
     top: 50%;
     z-index: 99;
