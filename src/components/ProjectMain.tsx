@@ -1,5 +1,23 @@
-import { Buttons } from './Buttons';
+import { Buttons, type ButtonAppType } from './Buttons';
 import styles from './ProjectMain.module.css'
+
+const buttonsApp: ButtonAppType[] = [
+  {
+    id: 0,
+    title: 'Ver o Dashboard',
+    url: 'https://app.powerbi.com/view?r=eyJrIjoiMDEwZjJkYzQtYTBmMC00ZWE3LWI5MjktZDJhZTUzODI2NjVhIiwidCI6IjE0YmU1ZTFkLTM2MGYtNDg0Ni1iNGIwLTJlNTkzNzc1NmQwZCJ9'
+  },
+  {
+    id: 1,
+    title: 'Ver o Projeto',
+    url: 'https://github.com/'
+  },
+  {
+    id: 2,
+    title: 'Descargar BD',
+    url: 'https://github.com/'
+  }
+]
 
 const PowerBiDashboard: React.FC = () => {
     return (
@@ -23,9 +41,9 @@ export function ProjectMain() {
                     {/*Da erro com o typescript*/}
                     <PowerBiDashboard />
                     <div className={styles.wrapperbuttons}>
-                      <Buttons />
-                      <Buttons />
-                      <Buttons />
+                      {buttonsApp.map((buttonApp) => {
+                        return <Buttons key={buttonApp.id} buttonApp={buttonApp} />
+                      })}
                     </div>
                 </div>
             </div>

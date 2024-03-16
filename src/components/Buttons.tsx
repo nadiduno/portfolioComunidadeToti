@@ -1,10 +1,21 @@
 import styles from './Buttons.module.css'
 
-export function Buttons () {
+export interface ButtonAppType
+{
+      id: number
+      title: string
+      url: string
+}
+
+interface AppProps {
+    buttonApp: ButtonAppType
+  }
+  
+export function Buttons ({ buttonApp }: AppProps) {
     return(
         <>
-            <a className={styles.buttonsborder} href="">
-                Ver o Dasborad
+            <a className={styles.buttonsborder} href={buttonApp.title} target="_blank" title={buttonApp.title}>
+                {buttonApp.title}
             </a>
         </>
     )
