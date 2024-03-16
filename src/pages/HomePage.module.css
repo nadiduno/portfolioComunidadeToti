@@ -2,10 +2,26 @@ body {
     position: relative;
 }
 
-.menu,
 .container {
     background-color: var(--color2);
+    position: relative;
+    z-index: 0;
 }
+
+.imagebackground{
+    width: 100%;
+    overflow:hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.cover{
+    width: 100%;
+    object-fit:cover;
+    opacity: 0.3
+}
+
 .footersocial{
     background-color: var(--color3);
 }
+

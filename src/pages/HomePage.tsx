@@ -7,10 +7,15 @@ import styles from './HomePage.module.css'
 export function HomePage () {
   return (
         <>
-            <main className={styles.menu}>
-                <Menu />            
-            </main>
             <div className={styles.container}>
+                <div className={styles.imagebackground}>
+                    <img
+                        className={styles.cover}
+                        src="https://github.com/nadiduno/portfolioComunidadeToti/blob/main/src/assets/bgstar.svg?raw=true"
+                        alt="Foto de um dev, clocar desc"
+                    />
+                </div>
+                <Menu />            
                 <ContainerHome />
             </div>
             <div>
