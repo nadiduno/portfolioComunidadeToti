@@ -4,4 +4,26 @@
     display: flex;
     align-items: center;
     justify-content:center;
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+    display: flexbox;
+    flex-direction: column;
+}
+.collaborators {
+    display: flex; /* Usar flexbox */
+    flex-direction: row; /* Dirección de filas para alinear los colaboradores horizontalmente */
+    flex-wrap: wrap; /* Permitir que los colaboradores se envuelvan en filas adicionales si no caben en una sola fila */
+    justify-content: flex-start; /* Alinear los colaboradores al principio */
+}
+
+.collaborators a {
+    margin-right: 15px; /* Espacio entre colaboradores */
+    margin-bottom: 10px; /* Espacio entre filas de colaboradores */
+}
+
+.collaborators img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
