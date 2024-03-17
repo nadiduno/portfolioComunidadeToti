@@ -26,7 +26,7 @@ export function FooterLink() {
             </div>
             
             <div>
-        Colaboradores do site - © 2024 <span id="currentYear"></span>
+        <p>Colaboradores do site - © 2024</p> <span id="currentYear"></span>
     </div>
 
         </footer>
