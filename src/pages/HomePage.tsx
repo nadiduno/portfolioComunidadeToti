@@ -1,3 +1,5 @@
+import { CardAnimation } from '../components/CardAnimation'
+import { CardProject } from '../components/CardProject'
 import { ContainerHome } from '../components/ContainerHome'
 import { FooterLink } from '../components/FooterLink'
 import { GraphicMath } from '../components/GraphicMath'
@@ -23,6 +25,10 @@ export function HomePage () {
             </div>
             <div>
                 <RedesSociais />
+            </div>
+            <div className={styles.container2}>
+                <CardAnimation />
+                <CardProject />
             </div>
             <footer className={styles.footersocial}>
                 <FooterLink />
