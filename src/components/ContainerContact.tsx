@@ -4,10 +4,11 @@ import {FiMail} from 'react-icons/fi'
 
 export function ContainerContact () {
     return(
-        <header className={styles.container}>
+        <div className={styles.container}>
+        <header className={styles.subcontainer}>
             <div className={styles.description}>
                 <h2>contate-me</h2>
-                <div className={styles.nome}>
+                <div className={styles.name}>
                     <h1>roberto carlos</h1>
                     <h3>analista de dados</h3>
                 </div>
@@ -27,5 +28,6 @@ export function ContainerContact () {
                 />
             </div>
         </header>
+        </div>
     )
 }
