@@ -1,3 +1,9 @@
 .containercard{
     margin: auto; 
 }
+
+.containercard span{
+    color: var(--color3);
+    font-size: 30px;
+    
+}
