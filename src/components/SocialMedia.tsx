@@ -1,6 +1,12 @@
+<<<<<<< HEAD:src/components/RedesSociais.tsx
 import { NavLink } from 'react-router-dom'
 import { IconType } from 'react-icons';
 import {FiHome, FiGithub, FiFacebook, FiInstagram, FiLinkedin, FiYoutube} from 'react-icons/fi'
+=======
+import styles from './SocialMedia.module.css'
+import { FiInstagram, FiLinkedin, FiYoutube, FiGithub} from 'react-icons/fi';
+import { FaWhatsapp } from 'react-icons/fa'
+>>>>>>> d0d5303 (Alterações de menu de links e page do links):src/components/SocialMedia.tsx
 
 import styles from './RedesSociais.module.css'
   
@@ -55,6 +61,7 @@ export function RedesSociais( ){
     return( 
         <div className={styles.redesPortafolio}>
             <ul className={styles.listinline}>
+<<<<<<< HEAD:src/components/RedesSociais.tsx
             {iconesApp.map((iconeApp) => (
                     <li key={iconeApp.id}> 
                         {iconeApp.id === 0 ? (
@@ -70,6 +77,33 @@ export function RedesSociais( ){
                         )}
                     </li>
                 ))}
+=======
+                <li>
+                    <a href="linkedin.com/in/" target="_blank" title="Ir a Linkedin">
+                    <FiLinkedin className= {styles.icons} size={25} color='fff'/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" title="Ir a Instagram" rel='noopener'>
+                    <FiInstagram className= {styles.icons} size={25} color='fff'/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.github.com/" target="_blank" title="Ir a Facebook" rel='noopener'>
+                    <FiGithub className= {styles.icons} size={25} color='fff'/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.whatsapp.com/" target="_blank" title="Ir a Youtube" rel='noopener'>
+                    <FaWhatsapp  className= {styles.icons} size={25} color='fff'/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank" title="Ir a Youtube" rel='noopener'>
+                    <FiYoutube className= {styles.icons} size={25} color='fff'/>
+                    </a>
+                </li>
+>>>>>>> d0d5303 (Alterações de menu de links e page do links):src/components/SocialMedia.tsx
             </ul>
         </div>
     );

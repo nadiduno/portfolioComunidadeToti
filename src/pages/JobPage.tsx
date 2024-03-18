@@ -3,10 +3,11 @@ import { useEffect } from 'react';
 import { ContainerJob } from '../components/ContainerJob'
 import { FooterLink } from '../components/FooterLink'
 import { Menu } from '../components/Menu'
-import { RedesSociais } from '../components/RedesSociais'
+import { RedesSociais } from '../components/SocialMedia'
 
 import styles from './HomePage.module.css'
 
+<<<<<<< HEAD
 export function JobPage () {
     useEffect(() => {
         const hash = window.location.hash; 
@@ -23,10 +24,13 @@ export function JobPage () {
         }
     }
   
+=======
+export function JobPage() {
+>>>>>>> d0d5303 (Alterações de menu de links e page do links)
     return (
         <>
             <main className={styles.menu}>
-                <Menu />            
+                <Menu />
             </main>
             <div className={styles.container}>
                 <ContainerJob />
@@ -38,5 +42,5 @@ export function JobPage () {
                 <FooterLink />
             </footer>
         </>
-  )
+    )
 }
