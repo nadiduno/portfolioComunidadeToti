@@ -26,6 +26,23 @@ header {
     margin: 40px 0px 0px 50px;
     position: relative;
     z-index: 1;
+    width: 100%;
+}
+
+.description:after {
+    content: "";
+    background-image: url(https://raw.githubusercontent.com/nadiduno/portfolioComunidadeToti/main/src/assets/photoman.png);
+    background-size: contain;
+    background-position: center right;
+    background-repeat: no-repeat;
+    filter: opacity(0.6);
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: -webkit-fill-available;
+    top: 0;
+    left: 0;
+    z-index: -1; 
 }
 
 .description h2 {
@@ -56,14 +73,6 @@ header {
     gap: 60px;
 }
 
-.imagenContacto {
-    margin: 80px 0px 0px 0px;
-    position: absolute;
-    align-self: flex-end;
-    right: 0;
-    z-index: 0;
-}
-
 
 /* Estilos específicos para dispositivos con un ancho máximo de 768px*/
 @media only screen and (max-width: 1210px) {
@@ -80,6 +89,10 @@ header {
         justify-content: center;
         gap: 25px;
         padding-top: 50px;
+    }
+
+    .description:after {
+        background-position: center;
     }
 
     .description h2 {
@@ -110,16 +123,7 @@ header {
         margin: 0;
         padding: 0;
     }
-
-    .imagenContacto {
-        position: static;
-        margin: 0;
-        align-self: center;
-        height: 100%;
-        width: auto;
-        margin-top: -100px;
-    }
-  }
+}
 
   @media only screen and (max-width: 700px) {
     .subcontainer {
@@ -154,23 +158,10 @@ header {
     .comunication {
         font-size: 40px;
     }
-
-    .imagenContacto {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-width: 20%;
-        margin-top: 0;
-        width: 250px;
-    }
-     
-    .imagenContacto img {
-        width: 100%;
-    }
-  }
+}
 
   @media only screen and (max-width: 400px) {
     .name {
         width: 50%;
     }
-  }
+}

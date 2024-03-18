@@ -1,5 +1,6 @@
 import styles from './ContainerContact.module.css'
 import {FiMail} from 'react-icons/fi'
+import { FaWhatsapp } from "react-icons/fa";
 
 
 export function ContainerContact () {
@@ -17,15 +18,9 @@ export function ContainerContact () {
                     <FiMail className='styles.icons' size={60} color='fff'/> 
                 </a>
                 <a href="" target='black' title='Enviar WhatsApp' rel='noopener'>
-                    <FiMail className='styles.icons' size={60} color='fff'/>
+                    <FaWhatsapp className='styles.icons' size={60} color='fff'/>
                 </a>
             </div>
-            </div>
-            <div className={styles.imagenContacto}>
-                <img
-                    src="https://github.com/nadiduno/portfolioComunidadeToti/blob/main/src/assets/photoman.png?raw=true"
-                    alt="Foto de um dev, clocar desc"
-                />
             </div>
         </header>
         </div>
