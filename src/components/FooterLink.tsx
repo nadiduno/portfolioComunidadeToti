@@ -11,8 +11,8 @@ export function FooterLink() {
                 <a href="https://www.linkedin.com/in/maolylara/" target="_blank">
                     <img src="https://media.licdn.com/dms/image/D4D03AQFxpNQeFmofnw/profile-displayphoto-shrink_200_200/0/1698188040979?e=1715817600&v=beta&t=Jt7znLWjfsUigLdD8-gvMPku1tFXmo5sf1rDPCOT-hs" alt="colaborador2" />
                 </a>
-                <a href="enlace_al_linkedin3" target="_blank"> {/*coloca tu link de perfil */}
-                    <img src="https://media.licdn.com/dms/image/D4D35AQGGPqar_zxotg/profile-framedphoto-shrink_200_200/0/1709583111683?e=1711213200&v=beta&t=tQUv78UqqtNUif5YzTH3tqfbIhFLP7VIpcjkDl-Iqhc" alt="Colaborador 3" />   {/* coloca el link de tu foto de perfil */}
+                <a href="https://www.linkedin.com/in/manuel-bernardo-165373208/" target="_blank"> {/*coloca tu link de perfil */}
+                    <img src="https://media.licdn.com/dms/image/D4D03AQHu2DVCy1LZsg/profile-displayphoto-shrink_200_200/0/1709568363617?e=1716422400&v=beta&t=B-I0fWlxXal_FcvE1ocE8h0-EWok9mu6EvApLHQmh9g" alt="Colaborador 3" />   {/* coloca el link de tu foto de perfil */}
                 </a>
                 <a href="enlace_al_linkedin4" target="_blank"> {/*coloca tu link de perfil */}
                     <img src="https://media.licdn.com/dms/image/D4D35AQGGPqar_zxotg/profile-framedphoto-shrink_200_200/0/1709583111683?e=1711213200&v=beta&t=tQUv78UqqtNUif5YzTH3tqfbIhFLP7VIpcjkDl-Iqhc" alt="Colaborador 4" />  {/* coloca el link de tu foto de perfil */}
