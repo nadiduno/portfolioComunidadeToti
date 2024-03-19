@@ -1,9 +1,10 @@
 .containercard{
     margin: auto; 
+    padding: 30px;
 }
 
 .containercard span{
     color: var(--color3);
-    font-size: 30px;
+    font-size: 35px;
     
 }
