@@ -73,6 +73,11 @@ header {
     gap: 60px;
 }
 
+.svgContainer {
+    font-size: 60px;
+    color: var(--color1);
+}
+
 
 /* Estilos específicos para dispositivos con un ancho máximo de 768px*/
 @media only screen and (max-width: 1210px) {
@@ -116,12 +121,13 @@ header {
     }
 
     .comunication {
-        font-size: 50px;
+        margin: 0;
+        padding: 0 0 25px 0;
     }
 
-    .comunication {
-        margin: 0;
-        padding: 0;
+    .svgContainer {
+        font-size: 40px;
+        color: var(--color1);
     }
 }
 
@@ -155,9 +161,6 @@ header {
         font-size: 30px;
     }
 
-    .comunication {
-        font-size: 40px;
-    }
 }
 
   @media only screen and (max-width: 400px) {

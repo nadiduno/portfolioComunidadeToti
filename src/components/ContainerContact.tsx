@@ -14,11 +14,11 @@ export function ContainerContact () {
                     <h3>analista de dados</h3>
                 </div>
             <div className={styles.comunication}>
-                <a href="mailto:" target='blank' title='Enviar email' rel='noopener'>
-                    <FiMail className='styles.icons' size={60} color='fff'/> 
+                <a href="mailto:" target='blank' title='Enviar email' rel='noopener' className={styles.svgContainer}>
+                    <FiMail/> 
                 </a>
-                <a href="" target='black' title='Enviar WhatsApp' rel='noopener'>
-                    <FaWhatsapp className='styles.icons' size={60} color='fff'/>
+                <a href="" target='black' title='Enviar WhatsApp' rel='noopener' className={styles.svgContainer}>
+                    <FaWhatsapp/>
                 </a>
             </div>
             </div>
