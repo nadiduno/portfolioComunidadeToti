@@ -3,7 +3,7 @@ import styles from './FooterLink.module.css';
 export function FooterLink() {
     return (
         <footer className={styles.container}>
-            <p>Colaboradores</p>
+            <p></p>
             <div className={styles.collaborators}>
                 <a href="https://www.linkedin.com/in/nadiduno/" target="_blank">
                     <img src="https://media.licdn.com/dms/image/D4D35AQGGPqar_zxotg/profile-framedphoto-shrink_200_200/0/1709583111683?e=1711213200&v=beta&t=tQUv78UqqtNUif5YzTH3tqfbIhFLP7VIpcjkDl-Iqhc" alt="colaborardor1" />  {/* recuerda describir tu foto de perfil sigue de ejemplo colaborador 6 */}
@@ -24,6 +24,11 @@ export function FooterLink() {
                     <img src="https://media.licdn.com/dms/image/D4D03AQEs87tKtvqYag/profile-displayphoto-shrink_200_200/0/1692373276885?e=1715817600&v=beta&t=oiPFrHx7Z5FbtIupVNjYRePxlvhMYDxV8mc18b8_D-8" alt="Colaborador 6: Mulher branca aparentemente com 35 anos, com camisa branca, cabelo preto, sorrindo e com pose empoderada. Está em pé em frente a uma cortina bege" />     {/*estructurar tu contenido de forma que sea fácilmente comprensible para los lectores de pantalla. */}
                 </a>
             </div>
+            
+            <div>
+        <p>Colaboradores do site - © 2024</p> <span id="currentYear"></span>
+    </div>
+
         </footer>
     );
 }
