@@ -11,17 +11,17 @@ export function RedesSociais(){
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/" target="_blank" title="Ir a Instagram">
+                    <a href="https://www.instagram.com/" target="_blank" title="Ir a Instagram" rel='noopener'>
                     <FiInstagram className= {styles.icons} size={25} color='fff'/>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com/" target="_blank" title="Ir a Facebook">
+                    <a href="https://www.facebook.com/" target="_blank" title="Ir a Facebook" rel='noopener'>
                     <FiFacebook className= {styles.icons} size={25} color='fff'/>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.youtube.com/" target="_blank" title="Ir a Youtube">
+                    <a href="https://www.youtube.com/" target="_blank" title="Ir a Youtube" rel='noopener'>
                     <FiYoutube className= {styles.icons} size={25} color='fff'/>
                     </a>
                 </li>

@@ -6,6 +6,7 @@
     justify-content: end;
     padding-right: 8rem;
     gap: 1.5rem;
+    background-color: var(--color2);
 }
 span{
     color: var(--color1);

@@ -1,3 +1,69 @@
-.containercard{
-    margin: auto; 
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   gap: 1.9rem;
 }
+
+
+.CardProject {
+    margin:auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+    box-shadow: var(--color3);
+    background: #292e33;
+    box-shadow: 0 0 50px var(--color3),
+    0 0 2px var(--color3), 0 0 1px var(--color3),
+    0 0 1px var(--color3), 0 0 2px var(--color3);
+   
+    
+}
+
+.cover{
+    position: relative;
+    display: flex;
+    width: 500px;
+    height: 500px;
+    animation-delay: .2s;
+    transition: brackground 0.5s, transform 0.5s ;
+    border: 2px solid var(--color3);
+      
+    
+  
+}
+.about{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: linear-gradient(rgba(0,0,0,.70),  rgba(0,0, 0, 20));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.5s;
+    padding: 0 2rem;
+}
+
+
+.cover:hover{
+  transform: translateY(-10px);
+     
+
+}
+.CardProject:hover .cover {
+    transform: scale(1.1);
+    
+}
+.CardProject:hover .about{
+    opacity: 1;
+   
+}
+
