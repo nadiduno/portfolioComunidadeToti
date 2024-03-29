@@ -1,8 +1,7 @@
-import { CardAnimation } from '../components/CardAnimation'
-import { CardProject } from '../components/CardProject'
+import { CardProjectSeconds } from '../components/CardProjectSeconds'
 import { ContainerHome } from '../components/ContainerHome'
 import { FooterLink } from '../components/FooterLink'
-import { GraphicMath } from '../components/GraphicMath'
+// import { GraphicMath } from '../components/GraphicMath'
 import { Menu } from '../components/Menu'
 import { RedesSociais } from '../components/RedesSociais'
 import styles from './HomePage.module.css'
@@ -25,8 +24,7 @@ export function HomePage () {
                 <RedesSociais />
             </div>
             <div className={styles.container2}>
-                <CardAnimation />
-                <CardProject />
+                <CardProjectSeconds  />
             </div>
             <footer className={styles.footersocial}>
                 <FooterLink />

@@ -1,6 +1,9 @@
 .containercard{
     margin: auto; 
     padding: 30px;
+    gap: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .containercard span{
