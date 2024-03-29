@@ -15,9 +15,6 @@ export function Menu () {
                 <NavLink to='/contato' title='contato'>
                     <span>Contato</span>
                 </NavLink>
-                <NavLink to='/link' title='Link'>
-                    <span>Link</span>
-                </NavLink>
             </nav>
         </>
     )
