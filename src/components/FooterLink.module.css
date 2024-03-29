@@ -1,25 +1,21 @@
 .container{
     width: 100%;
-    height: 6rem;
     display: flex;
     align-items: center;
     justify-content:center;
-    text-align: left;
-    padding: 20px;
-    width: 100%;
-    display: flexbox;
     flex-direction: column;
+    padding: 2rem;
 }
+
 .collaborators {
-    display: flex; /* Usar flexbox */
-    flex-direction: row; /* Dirección de filas para alinear los colaboradores horizontalmente */
-    flex-wrap: wrap; /* Permitir que los colaboradores se envuelvan en filas adicionales si no caben en una sola fila */
-    justify-content: flex-start; /* Alinear los colaboradores al principio */
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
 }
 
 .collaborators a {
-    margin-right: 20px; 
-    margin-bottom: 5px; 
+    margin-right: 2rem; 
 }
 
 .collaborators img {
@@ -28,3 +24,23 @@
     height: 50px;
 }
 
+.collaborators a:hover{
+    text-decoration: none;
+    filter: drop-shadow(0 0 .75em var(--color1));
+}
+
+.spacefont{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: baseline;
+}
+
+.fontlink {
+    color: var(--color2 );
+}
+
+.pipespan::after {
+    content: "|"; 
+    margin: 0 0.25rem;
+    color: var(--color2); 
+}

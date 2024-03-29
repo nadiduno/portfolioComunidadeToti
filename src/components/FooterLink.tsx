@@ -1,33 +1,56 @@
+import { FooterColab, ColabAppType} from './FooterColab';
+
 import styles from './FooterLink.module.css';
 
+const colabsApp: ColabAppType[] = [
+    {
+      id: 0,
+      title: 'Nadi Duno',
+      descrition: 'Mulher parda de cabelo preto, fundo amarelo',
+      url: 'https://www.linkedin.com/in/nadiduno/',
+      urlphoto: 'https://media.licdn.com/dms/image/D4D35AQGGPqar_zxotg/profile-framedphoto-shrink_200_200/0/1709583111683?e=1712282400&v=beta&t=SvmKnGFpWOc3OtdkcsPG_xUFV1IijHZhNXkeaTKsWc8'
+    },
+    {
+        id: 1,
+        title: 'Maoly Lara',
+        url: 'https://www.linkedin.com/in/maolylara/',
+        urlphoto: 'https://media.licdn.com/dms/image/D4D03AQFxpNQeFmofnw/profile-displayphoto-shrink_200_200/0/1698188040979?e=1715817600&v=beta&t=Jt7znLWjfsUigLdD8-gvMPku1tFXmo5sf1rDPCOT-hs'
+      },
+      {
+        id: 2,
+        title: 'Manuel Bernardo',
+        url: 'https://www.linkedin.com/in/manuel-bernardo-165373208/',
+        urlphoto: 'https://media.licdn.com/dms/image/D4D03AQHu2DVCy1LZsg/profile-displayphoto-shrink_200_200/0/1709568363617?e=1716422400&v=beta&t=B-I0fWlxXal_FcvE1ocE8h0-EWok9mu6EvApLHQmh9g'
+      },
+      {
+        id: 3,
+        title: 'Victor Alcala',
+        url: 'https://www.linkedin.com/in/alcalamvictor/',
+        urlphoto: 'https://media.licdn.com/dms/image/D4D35AQGuQkqdaXo7BQ/profile-framedphoto-shrink_200_200/0/1710717303299?e=1712282400&v=beta&t=dPIzAL0ugfGrM1MCFFCg7iGw5AKQCbIT5G-rr97XBl0'
+      },
+      {
+        id: 4,
+        title: 'Yurisay Martinez',
+        descrition: 'Mulher branca aparentemente com 35 anos, com camisa branca, cabelo preto, sorrindo e com pose empoderada. Está em pé em frente a uma cortina bege',
+        url: 'https://www.linkedin.com/in/yurisay-martinez/',
+        urlphoto: 'https://media.licdn.com/dms/image/D4D03AQEs87tKtvqYag/profile-displayphoto-shrink_200_200/0/1692373276885?e=1715817600&v=beta&t=oiPFrHx7Z5FbtIupVNjYRePxlvhMYDxV8mc18b8_D-8'
+      }
+    
+]  
+  
 export function FooterLink() {
     return (
         <footer className={styles.container}>
-            <p></p>
-            <div className={styles.collaborators}>
-                <a href="https://www.linkedin.com/in/nadiduno/" target="_blank">
-                    <img src="https://media.licdn.com/dms/image/D4D35AQGGPqar_zxotg/profile-framedphoto-shrink_200_200/0/1709583111683?e=1711213200&v=beta&t=tQUv78UqqtNUif5YzTH3tqfbIhFLP7VIpcjkDl-Iqhc" alt="colaborardor1" />  {/* recuerda describir tu foto de perfil sigue de ejemplo colaborador 6 */}
-                </a>
-                <a href="https://www.linkedin.com/in/maolylara/" target="_blank">
-                    <img src="https://media.licdn.com/dms/image/D4D03AQFxpNQeFmofnw/profile-displayphoto-shrink_200_200/0/1698188040979?e=1715817600&v=beta&t=Jt7znLWjfsUigLdD8-gvMPku1tFXmo5sf1rDPCOT-hs" alt="colaborador2" />
-                </a>
-                <a href="https://www.linkedin.com/in/manuel-bernardo-165373208/" target="_blank"> {/*coloca tu link de perfil */}
-                    <img src="https://media.licdn.com/dms/image/D4D03AQHu2DVCy1LZsg/profile-displayphoto-shrink_200_200/0/1709568363617?e=1716422400&v=beta&t=B-I0fWlxXal_FcvE1ocE8h0-EWok9mu6EvApLHQmh9g" alt="Colaborador 3" />   {/* coloca el link de tu foto de perfil */}
-                </a>
-                <a href="enlace_al_linkedin4" target="_blank"> {/*coloca tu link de perfil */}
-                    <img src="https://media.licdn.com/dms/image/D4D35AQGGPqar_zxotg/profile-framedphoto-shrink_200_200/0/1709583111683?e=1711213200&v=beta&t=tQUv78UqqtNUif5YzTH3tqfbIhFLP7VIpcjkDl-Iqhc" alt="Colaborador 4" />  {/* coloca el link de tu foto de perfil */}
-                </a>
-                <a href="enlace_al_linkedin5" target="_blank"> {/*coloca tu link de perfil */}
-                    <img src="https://media.licdn.com/dms/image/D4D35AQGGPqar_zxotg/profile-framedphoto-shrink_200_200/0/1709583111683?e=1711213200&v=beta&t=tQUv78UqqtNUif5YzTH3tqfbIhFLP7VIpcjkDl-Iqhc" alt="Colaborador 5" />  {/* coloca el link de tu foto de perfil */}
-                </a> 
-                <a href="https://www.linkedin.com/in/yurisay-martinez/" target="_blank">
-                    <img src="https://media.licdn.com/dms/image/D4D03AQEs87tKtvqYag/profile-displayphoto-shrink_200_200/0/1692373276885?e=1715817600&v=beta&t=oiPFrHx7Z5FbtIupVNjYRePxlvhMYDxV8mc18b8_D-8" alt="Colaborador 6: Mulher branca aparentemente com 35 anos, com camisa branca, cabelo preto, sorrindo e com pose empoderada. Está em pé em frente a uma cortina bege" />     {/*estructurar tu contenido de forma que sea fácilmente comprensible para los lectores de pantalla. */}
-                </a>
+            <div className={styles.collaborators}> 
+                {colabsApp.map((colabApp) => {
+                        return <FooterColab key={colabApp.id} colabApp={colabApp} />
+                })}
+            </div>    
+            <div className={styles.spacefont}>
+                <p>Colaboradores do site - © 2024</p> 
+                <p className={styles.pipespan}></p>
+                <p>Embaixadores da <a href="https://totidiversidade.com.br/" target="_blank" className={styles.fontlink}>Toti Diversidade</a></p> 
             </div>
-            
-            <div>
-        <p>Colaboradores do site - © 2024</p> <span id="currentYear"></span>
-    </div>
 
         </footer>
     );
