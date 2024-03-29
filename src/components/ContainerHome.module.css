@@ -23,3 +23,14 @@
     align-items: center;
     padding: 3.5rem;
 }
+
+.caption{
+    font-size: xx-large;
+    color: var(--color4);
+    padding: 4rem 0 1.5rem 0;
+}
+
+.caption:first-child{
+    padding-bottom: 4rem;
+    padding-top: 1rem;
+}

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import logopython from '../assets/logoPython.svg';
 import logosql from '../assets/logoSQL.svg';
@@ -12,7 +12,7 @@ const logos: string[] = [logopython, logosql, logojupyter, logopowerbi];
 
 export function Logos ()  {
 
-    const [showLogos, setShowLogos] = useState(false);
+  const [showLogos, setShowLogos] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -21,11 +21,18 @@ export function Logos ()  {
     return () => clearTimeout(timer);
   }, []);
 
-    return(
-        
-        <div className={`${styles.wrap} ${showLogos ? styles.show : ''}`}>
-      {logos.map((logo, index) => (
-        <img key={index} className={styles.logos} src={logo} alt={`Logo ${index}`} />
+
+  const extractLogoName = (path: string) => {
+    const parts = path.split('/');
+    const filename = parts[parts.length - 1];
+    const name = filename.split('.')[0];
+    return name.charAt(0).toUpperCase() + name.slice(1); 
+  };  
+  
+  return(   
+    <div className={`${styles.wrap} ${showLogos ? styles.show : ''}`}>
+        {logos.map((logo, index) => (
+        <img key={index} className={`${styles.logos} ${showLogos ? styles.show : ''}`} src={logo} alt={extractLogoName(logo)} title={extractLogoName(logo)} />
       ))}
     </div>
 
