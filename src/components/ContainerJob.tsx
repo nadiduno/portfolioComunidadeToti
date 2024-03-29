@@ -5,7 +5,15 @@ import styles from './ContainerJob.module.css'
 export function ContainerJob () {
     return(
         <header className={styles.container}>
-            <ProjectMain />
+           <div className={styles.subsetion}>
+                <ProjectMain />
+           </div>
+           <div className={styles.subsetion}>
+                <ProjectMain />
+           </div>
+           <div className={styles.subsetion}>
+                <ProjectMain />
+           </div>
         </header>
     )
 }

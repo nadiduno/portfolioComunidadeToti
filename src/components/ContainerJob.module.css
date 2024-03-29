@@ -5,3 +5,15 @@
     justify-content: center;
     padding: 3rem;
 }
+
+.subsetion{
+    padding: 3rem 11rem;
+}
+
+.subsetion:first-child{
+    padding: 2rem;
+}
+
+.subsetion:nth-child(even){
+    background: var(--color5);
+}
