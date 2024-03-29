@@ -1,6 +1,7 @@
 import styles from './ContainerContact.module.css'
 import {FiMail} from 'react-icons/fi'
 import { FaWhatsapp } from "react-icons/fa";
+import { Photo } from './Photo';
 
 
 export function ContainerContact () {
@@ -8,19 +9,26 @@ export function ContainerContact () {
         <div className={styles.container}>
         <header className={styles.subcontainer}>
             <div className={styles.description}>
-                <h2>contate-me</h2>
-                <div className={styles.name}>
-                    <h1>roberto carlos</h1>
-                    <h3>analista de dados</h3>
+                <div className={styles.wrapper}>
+                    <div>
+                        <h2>Contate-me</h2>
+                        <div className={styles.name}>
+                            <h1>Roberto Carlos</h1>
+                            <h3>Analista de Dados</h3>
+                        </div>
+                        <div className={styles.comunication}>
+                            <a href="mailto:" target='blank' title='Enviar email' rel='noopener' className={styles.svgContainer}>
+                                <FiMail/> 
+                            </a>
+                            <a href="https://api.whatsapp.com/send?phone=5571984338160&text=Olá%21%20Gostaria%20de%20falar%20contigo." target='_blank' title='Enviar WhatsApp' rel='noopener' className={styles.svgContainer}>
+                                <FaWhatsapp/>
+                            </a>
+                        </div>
+                    </div>
+                    <div className={styles.detailphoto}>
+                        <Photo />
+                    </div>
                 </div>
-            <div className={styles.comunication}>
-                <a href="mailto:" target='blank' title='Enviar email' rel='noopener' className={styles.svgContainer}>
-                    <FiMail/> 
-                </a>
-                <a href="" target='black' title='Enviar WhatsApp' rel='noopener' className={styles.svgContainer}>
-                    <FaWhatsapp/>
-                </a>
-            </div>
             </div>
         </header>
         </div>

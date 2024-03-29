@@ -1,11 +1,3 @@
-html {
-    background-color: var(--color2);
-}
-
-header {
-    background-color: var(--color2);
-}
-
 .container {
     background-color: var(--color2);
     padding: 60px 0px 60px 0px;
@@ -14,9 +6,14 @@ header {
 .subcontainer {
     width: 100%;
     background-color: var(--color2);
-    border-top: 2px  solid #DD4765;
-    border-bottom: 2px  solid #DD4765;
+    border-top: 1px  solid var(--color3);
+    border-bottom: 1px  solid var(--color1);
     display: flex;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
 }
 
 .description {
@@ -31,7 +28,6 @@ header {
 
 .description:after {
     content: "";
-    background-image: url(https://raw.githubusercontent.com/nadiduno/portfolioComunidadeToti/main/src/assets/photoman.png);
     background-size: contain;
     background-position: center right;
     background-repeat: no-repeat;
@@ -48,9 +44,8 @@ header {
 .description h2 {
     font-family: roboto;
     margin-bottom: 70px;
-    color: #DD4765;
+    color: var(--color3);
     font-weight: 300;
-    text-transform: capitalize;
 }
 
 .name {
@@ -63,7 +58,6 @@ header {
 }
 
 .name h3 {
-    text-transform: capitalize;
     opacity: 20%;
 }
 
@@ -167,4 +161,9 @@ header {
     .name {
         width: 50%;
     }
+}
+
+.detailphoto{
+    opacity: 0.4;
+    margin-top: 6rem;
 }
