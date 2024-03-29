@@ -12,14 +12,12 @@ export function HomePage () {
         <>
             <div className={styles.container}>
                 <div className={styles.imagebackground}>
-                    <GraphicMath />
-                    {/* Colocaro gráfico o a imagem abaixo */}
-                    {/* <img
+                    {/* <GraphicMath /> */}
+                    <img
                         className={styles.cover}
                         src="https://github.com/nadiduno/portfolioComunidadeToti/blob/main/src/assets/bgstar.svg?raw=true"
-                        alt="Foto de um dev, clocar desc"
-                    /> */}
-                </div>
+                    />
+                </div>  
                 <Menu />            
                 <ContainerHome />
             </div>
