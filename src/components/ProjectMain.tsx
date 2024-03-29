@@ -5,17 +5,17 @@ const buttonsApp: ButtonAppType[] = [
   {
     id: 0,
     title: 'Ver o Dashboard',
-    url: 'https://app.powerbi.com/view?r=eyJrIjoiMDEwZjJkYzQtYTBmMC00ZWE3LWI5MjktZDJhZTUzODI2NjVhIiwidCI6IjE0YmU1ZTFkLTM2MGYtNDg0Ni1iNGIwLTJlNTkzNzc1NmQwZCJ9'
+    url: 'https://app.powerbi.com/view?r=eyJrIjoiMWYxMTVkZjUtMTI2OS00NzBmLWI1MGMtOWQ0Nzc2YzMzNzVkIiwidCI6IjE0YmU1ZTFkLTM2MGYtNDg0Ni1iNGIwLTJlNTkzNzc1NmQwZCJ9'
   },
   {
     id: 1,
     title: 'Ver o Projeto',
-    url: 'https://github.com/'
+    url: 'https://github.com/nadiduno/DataCientists'
   },
   {
     id: 2,
     title: 'Descargar BD',
-    url: 'https://github.com/'
+    url: 'https://raw.githubusercontent.com/nadiduno/DataCientists/main/projetosv1.csv'
   }
 ]
 
@@ -25,7 +25,7 @@ const PowerBiDashboard: React.FC = () => {
         title="Vendas"
         width="750"
         height="498"
-        src="https://app.powerbi.com/view?r=eyJrIjoiMWYxMTVkZjUtMTI2OS00NzBmLWI1MGMtOWQ0Nzc2YzMzNzVkIiwidCI6IjE0YmU1ZTFkLTM2MGYtNDg0Ni1iNGIwLTJlNTkzNzc1NmQwZCJ9npm run dev]"
+        src="https://app.powerbi.com/view?r=eyJrIjoiMWYxMTVkZjUtMTI2OS00NzBmLWI1MGMtOWQ0Nzc2YzMzNzVkIiwidCI6IjE0YmU1ZTFkLTM2MGYtNDg0Ni1iNGIwLTJlNTkzNzc1NmQwZCJ9"
         allowFullScreen={true as boolean}
       />
     );
