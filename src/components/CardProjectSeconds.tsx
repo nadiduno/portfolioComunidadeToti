@@ -26,13 +26,6 @@ const cardsApp: CardAppType[] = [
     
 ]
 
-function scrollToSection(id: number) {
-    const element = document.getElementById(`trabalhos${id}`);
-    if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-    }
-}
-
 export function CardProjectSeconds () {
 
     return(
