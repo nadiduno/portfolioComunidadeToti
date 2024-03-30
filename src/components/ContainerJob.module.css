@@ -6,14 +6,28 @@
     padding: 3rem;
 }
 
+.title{
+    font-size: xx-large;
+    color: var(--color3);
+    padding: 2rem;
+}
+
+.caption{
+    font-size: xx-large;
+    color: var(--color4);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
 .subsetion{
     padding: 3rem 11rem;
 }
 
 .subsetion:first-child{
-    padding: 2rem;
+    padding: 0.5rem;
 }
 
-.subsetion:nth-child(even){
+.subsetion:nth-child(odd){
     background: var(--color5);
 }

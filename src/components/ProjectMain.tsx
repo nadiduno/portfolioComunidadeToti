@@ -1,39 +1,51 @@
 import { Buttons, type ButtonAppType } from './Buttons';
 import styles from './ProjectMain.module.css'
 
-const buttonsApp: ButtonAppType[] = [
-  {
-    id: 0,
-    title: 'Ver o Dashboard',
-    url: 'https://app.powerbi.com/view?r=eyJrIjoiMWYxMTVkZjUtMTI2OS00NzBmLWI1MGMtOWQ0Nzc2YzMzNzVkIiwidCI6IjE0YmU1ZTFkLTM2MGYtNDg0Ni1iNGIwLTJlNTkzNzc1NmQwZCJ9'
-  },
-  {
-    id: 1,
-    title: 'Ver o Projeto',
-    url: 'https://github.com/nadiduno/DataCientists'
-  },
-  {
-    id: 2,
-    title: 'Descargar BD',
-    url: 'https://raw.githubusercontent.com/nadiduno/DataCientists/main/projetosv1.csv'
-  }
-]
+export interface ProjectAppType
+{
+      id: number
+      title: string
+      urlproject: string
+      urlgithub: string 
+      urlbddownload: string
+}
 
-const PowerBiDashboard: React.FC = () => {
+interface AppProps {
+  projectApp: ProjectAppType
+}  
+
+export function ProjectMain({ projectApp }: AppProps) {
+  const PowerBiDashboard: React.FC = () => {
     return (
       <iframe
-        title="Vendas"
+        title={projectApp.title}
         width="750"
         height="498"
-        src="https://app.powerbi.com/view?r=eyJrIjoiMWYxMTVkZjUtMTI2OS00NzBmLWI1MGMtOWQ0Nzc2YzMzNzVkIiwidCI6IjE0YmU1ZTFkLTM2MGYtNDg0Ni1iNGIwLTJlNTkzNzc1NmQwZCJ9"
+        src={projectApp.urlproject}
         allowFullScreen={true as boolean}
       />
     );
   };
   
-
-export function ProjectMain() {
-    return(
+  const buttonsApp: ButtonAppType[] = [
+    {
+      id: 0,
+      title: 'Ver o Dashboard',
+      urlbutton: projectApp.urlproject // Aqui usamos o urlproject
+    },
+    {
+      id: 1,
+      title: 'Ver o Projeto',
+      urlbutton: projectApp.urlgithub // Aqui usamos o urlgithub
+    },
+    {
+      id: 2,
+      title: 'Descargar BD',
+      urlbutton: projectApp.urlbddownload // Aqui usamos o urlbddownload
+    }
+  ]
+  
+  return(
         <>
             <div className={styles.container}>
                 <div className={styles.iframeborder}>   

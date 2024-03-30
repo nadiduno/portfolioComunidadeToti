@@ -4,7 +4,7 @@ export interface ButtonAppType
 {
       id: number
       title: string
-      url: string
+      urlbutton: string
 }
 
 interface AppProps {
@@ -14,7 +14,7 @@ interface AppProps {
 export function Buttons ({ buttonApp }: AppProps) {
     return(
         <>
-            <a className={styles.buttonsborder} href={buttonApp.url} target="_blank" title={buttonApp.title}>
+            <a className={styles.buttonsborder} href={buttonApp.urlbutton} target="_blank" title={buttonApp.title}>
                 {buttonApp.title}
             </a>
         </>
