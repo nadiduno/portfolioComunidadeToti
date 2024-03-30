@@ -1,6 +1,6 @@
-import styles from './CardProjectSeconds.module.css'
-
+import { NavLink } from 'react-router-dom'
 import { CardProject, CardAppType } from './CardProject'
+import styles from './CardProjectSeconds.module.css'
 
 const cardsApp: CardAppType[] = [
     {
@@ -12,7 +12,7 @@ const cardsApp: CardAppType[] = [
     },
     {
         id: 1,
-        title: 'Prjeto de RH',
+        title: 'Projeto de RH',
         descrition: 'Dashboard de RH',
         url: 'https://github.com/nadiduno/portfolioComunidadeToti/blob/main/src/assets/imgs/proj2.png?raw=true'
     },
@@ -22,15 +22,30 @@ const cardsApp: CardAppType[] = [
         descrition: 'Dashboard de Vendas',
         about: 'Métricas das vendas',
         url: 'https://github.com/nadiduno/portfolioComunidadeToti/blob/main/src/assets/proj1.png?raw=true'
-    }
+    },
+    
 ]
 
+function scrollToSection(id: number) {
+    const element = document.getElementById(`trabalhos${id}`);
+    if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+    }
+}
+
 export function CardProjectSeconds () {
+
     return(
         <div className={styles.containercard}>
             
             {cardsApp.map((cardApp) => {
-                return <CardProject key={cardApp.id} cardApp={cardApp} />
+                return( 
+                    <nav>
+                        <NavLink to={`/trabalhos#${cardApp.id+1}`} title={cardApp.title}>
+                            <CardProject key={cardApp.id} cardApp={cardApp} />
+                        </NavLink>
+                    </nav>
+                )
             })}
         </div>
     )

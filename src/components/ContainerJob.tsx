@@ -14,7 +14,7 @@ const projectsApp: ProjectAppType[] = [
   },
   {
       id: 1,
-      title: 'Dashboard Científico',
+      title: 'Dashboard 2',
       urlproject: 'https://app.powerbi.com/view?r=eyJrIjoiMWYxMTVkZjUtMTI2OS00NzBmLWI1MGMtOWQ0Nzc2YzMzNzVkIiwidCI6IjE0YmU1ZTFkLTM2MGYtNDg0Ni1iNGIwLTJlNTkzNzc1NmQwZCJ9',
       urlgithub: 'https://github.com/nadiduno/DataCientists',
       urlbddownload: 'https://raw.githubusercontent.com/nadiduno/DataCientists/main/projetosv1.csv'
@@ -22,7 +22,15 @@ const projectsApp: ProjectAppType[] = [
     },
     {
       id: 2,
-      title: 'Dashboard Científico',
+      title: 'Dashboard 3',
+      urlproject: 'https://app.powerbi.com/view?r=eyJrIjoiMWYxMTVkZjUtMTI2OS00NzBmLWI1MGMtOWQ0Nzc2YzMzNzVkIiwidCI6IjE0YmU1ZTFkLTM2MGYtNDg0Ni1iNGIwLTJlNTkzNzc1NmQwZCJ9',
+      urlgithub: 'https://github.com/nadiduno/DataCientists',
+      urlbddownload: 'https://raw.githubusercontent.com/nadiduno/DataCientists/main/projetosv1.csv'
+
+    },
+    {
+      id: 3,
+      title: 'Dashboard 4',
       urlproject: 'https://app.powerbi.com/view?r=eyJrIjoiMWYxMTVkZjUtMTI2OS00NzBmLWI1MGMtOWQ0Nzc2YzMzNzVkIiwidCI6IjE0YmU1ZTFkLTM2MGYtNDg0Ni1iNGIwLTJlNTkzNzc1NmQwZCJ9',
       urlgithub: 'https://github.com/nadiduno/DataCientists',
       urlbddownload: 'https://raw.githubusercontent.com/nadiduno/DataCientists/main/projetosv1.csv'
@@ -37,8 +45,10 @@ export function ContainerJob () {
           {projectsApp.map((projectApp) => {
                return ( 
                 <div className={styles.subsetion}> 
-                  <h2 className={styles.caption}>{projectApp.title}</h2>
-                  <ProjectMain key={projectApp.id} projectApp={projectApp} />
+                  <section key={projectApp.id} id={`${projectApp.id}`}>
+                    <h2 className={styles.caption}>{projectApp.title}</h2>
+                    <ProjectMain key={projectApp.id} projectApp={projectApp} />
+                  </section>                  
                   </div>
                )
           })}
