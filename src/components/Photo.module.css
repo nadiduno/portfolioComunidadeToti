@@ -11,3 +11,12 @@
     height: 110%;
     margin-bottom: -1.5rem;
 }
+
+@media only screen and (max-width: 768px) {
+    .containerphoto{
+        height: 20rem;
+    }
+    .cover{
+        margin-bottom: -0.25rem;
+    }    
+}

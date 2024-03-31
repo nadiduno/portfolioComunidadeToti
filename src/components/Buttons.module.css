@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 1rem;
 }
 
 a{
@@ -24,4 +25,15 @@ a{
 a:hover{
     text-decoration: none;
     filter: drop-shadow(0 0 .75em var(--color3));
+}
+
+@media only screen and (max-width: 768px) {
+    .buttonsborder{
+        width: 5rem;
+        height: 3.5rem;
+        font-size: small;
+        margin: 0.25rem;
+        text-align: center;
+        padding: 0.25rem;
+    }
 }

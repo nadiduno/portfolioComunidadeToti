@@ -26,6 +26,7 @@ body{
     -webkit-font-smoothing: antialiased;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
+    width: 100%;
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -41,4 +42,3 @@ body,input,textarea,button{
       width: 1200px;
     }
 }
-  

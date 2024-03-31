@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import { IconType } from 'react-icons';
 import {FiHome, FiGithub, FiFacebook, FiInstagram, FiLinkedin, FiYoutube} from 'react-icons/fi'
 
 import styles from './RedesSociais.module.css'
@@ -6,7 +7,7 @@ import styles from './RedesSociais.module.css'
 interface IconeAppType
 {
       id: number
-      iconemenu: any
+      iconemenu: IconType
       title: string
       urlicone: string
 }

@@ -21,3 +21,18 @@
 .linetext{
     line-height: 1.5;
 }
+
+@media only screen and (max-width: 768px) {
+    .container{
+        height: 16rem;
+        justify-items: center;
+        text-align: center
+    }
+    .titlecor{
+        font-size: 4.25rem;
+    }
+    
+    .titlesecond{
+        font-size: 4.875rem;
+    }    
+}

@@ -14,34 +14,38 @@ interface AppProps {
   projectApp: ProjectAppType
 }  
 
+// const iframeWidth = `calc((100vw - 50px) / 2)`; 
+// const iframeHeight = `calc((100vw - 50px) * 498 / 750 / 2)`; 
+
 export function ProjectMain({ projectApp }: AppProps) {
   const PowerBiDashboard: React.FC = () => {
     return (
+      <div className={styles.iframeContainer}>
       <iframe
         title={projectApp.title}
-        width="750"
-        height="498"
+        // width={iframeWidth}
+        // height={iframeHeight}
         src={projectApp.urlproject}
         allowFullScreen={true as boolean}
       />
-    );
-  };
+      </div>
+    )
+  }
   
   const buttonsApp: ButtonAppType[] = [
     {
       id: 0,
       title: 'Ver o Dashboard',
-      urlbutton: projectApp.urlproject // Aqui usamos o urlproject
-    },
+      urlbutton: projectApp.urlproject    },
     {
       id: 1,
       title: 'Ver o Projeto',
-      urlbutton: projectApp.urlgithub // Aqui usamos o urlgithub
+      urlbutton: projectApp.urlgithub 
     },
     {
       id: 2,
       title: 'Descargar BD',
-      urlbutton: projectApp.urlbddownload // Aqui usamos o urlbddownload
+      urlbutton: projectApp.urlbddownload 
     }
   ]
   

@@ -43,7 +43,11 @@ export function FooterLink() {
         <footer className={styles.container}>
             <div className={styles.collaborators}> 
                 {colabsApp.map((colabApp) => {
-                        return <FooterColab key={colabApp.id} colabApp={colabApp} />
+                        return(
+                          <div className={styles.collaboratorscenter}>
+                              <FooterColab key={colabApp.id} colabApp={colabApp} />
+                          </div>
+                        )
                 })}
             </div>    
             <div className={styles.spacefont}>
