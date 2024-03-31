@@ -40,6 +40,10 @@ ul {
     overflow: hidden;
 }
 
-.home{
+li:first-child{
     margin-bottom: 1.5rem;
 }
+
+.iconColor {
+    color: var(--color1);
+  }
