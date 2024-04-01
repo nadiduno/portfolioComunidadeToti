@@ -1,6 +1,6 @@
 .container {
     background-color: var(--color2);
-    padding: 60px 0px 60px 0px;
+    padding: 3.75rem 0px;
 }
 
 .subcontainer {
@@ -17,10 +17,10 @@
 }
 
 .description {
-    font-size: 40px;
+    font-size: 2.5rem;
     display: flex;
     flex-direction: column;
-    margin: 40px 0px 0px 50px;
+    margin: 2.5rem 0px 0px 3.125rem;
     position: relative;
     z-index: 1;
     width: 100%;
@@ -42,15 +42,14 @@
 }
 
 .description h2 {
-    font-family: roboto;
-    margin-bottom: 70px;
+    margin-bottom: 4.375rem;
     color: var(--color3);
     font-weight: 300;
 }
 
 .name {
     font-family: roboto;
-    line-height: 90px;
+    line-height: 5.625rem;
 }
 
 .name h1 {
@@ -62,108 +61,54 @@
 }
 
 .comunication {
-    padding: 50px 0px 60px 50px;
+    padding: 3.125rem 0px 3.75rem 3.125rem;
     display: flex;
     gap: 60px;
 }
 
 .svgContainer {
-    font-size: 60px;
+    font-size: 3.75rem;
     color: var(--color1);
-}
-
-
-/* Estilos específicos para dispositivos con un ancho máximo de 768px*/
-@media only screen and (max-width: 1210px) {
-    .subcontainer {
-      width: 100%;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .description {
-        margin: 0;
-        align-items: center;
-        justify-content: center;
-        gap: 25px;
-        padding-top: 50px;
-    }
-
-    .description:after {
-        background-position: center;
-    }
-
-    .description h2 {
-        margin: 0;
-        font-size: 40px;
-    }
-
-    .name {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .name h1 {
-        font-size: 60px;
-    }
-
-    .name h3 {
-        font-size: 40px;
-    }
-
-    .comunication {
-        margin: 0;
-        padding: 0 0 25px 0;
-    }
-
-    .svgContainer {
-        font-size: 40px;
-        color: var(--color1);
-    }
-}
-
-  @media only screen and (max-width: 700px) {
-    .subcontainer {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .description {
-        align-items: center;
-        padding-top: 30px; /* Ajusta según sea necesario */
-    }
-
-    .description h2 {
-        font-size: 40px;
-    }
-
-    .name {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .name h1 {
-        font-size: 45px;
-    }
-
-    .name h3 {
-        font-size: 30px;
-    }
-
-}
-
-  @media only screen and (max-width: 400px) {
-    .name {
-        width: 50%;
-    }
 }
 
 .detailphoto{
     opacity: 0.4;
     margin-top: 6rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 0px;
+        margin: auto;
+        text-align: start;
+    }
+    .description h2 {
+        margin-bottom: -2rem
+    }    
+    .name h1 {
+        font-size: 2rem;
+        padding-top: 2rem; 
+    }
+    .name h2 {
+        font-size: 2.5 rem;
+    }
+    .name h3 {
+        font-size: 2rem;
+    }
+    .wrapper{
+        display: grid;
+    }
+    .detailphoto{
+        margin-top: -3em;
+        padding: 1rem;
+        display: flex;
+        justify-items: center;
+    }   
+    .comunication {
+        padding: 0;
+        padding-bottom: 5rem;
+        display: flex;
+        justify-content: left;
+        gap: 60px;
+    }
 }
