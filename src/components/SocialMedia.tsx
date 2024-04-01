@@ -53,53 +53,22 @@ export function RedesSociais() {
     return (
         <div className={styles.redesPortafolio}>
             <ul className={styles.listinline}>
-<<<<<<< HEAD:src/components/RedesSociais.tsx
-    {
-        iconesApp.map((iconeApp) => (
-            <li key={iconeApp.id}>
-                {iconeApp.id === 0 ? (
-                    <nav>
-                        <NavLink to={iconeApp.urlicone} title={iconeApp.title} rel='noopener noreferrer'>
-                            <iconeApp.iconemenu className={`${styles.icons} ${styles.iconColor}`} size={25} />
-                        </NavLink>
-                    </nav>
-                ) : (
-                    <a href={iconeApp.urlicone} target="_blank" title={iconeApp.title} rel='noopener noreferrer'>
-                        <iconeApp.iconemenu className={`${styles.icons} ${styles.iconColor}`} size={25} />
-                    </a>
-                )}
-            </li>
-        ))
-    }
-=======
-                <li>
-                    <a href="linkedin.com/in/" target="_blank" title="Ir a Linkedin">
-                    <FiLinkedin className= {styles.icons} size={25} color='fff'/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/" target="_blank" title="Ir a Instagram" rel='noopener'>
-                    <FiInstagram className= {styles.icons} size={25} color='fff'/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.github.com/" target="_blank" title="Ir a Facebook" rel='noopener'>
-                    <FiGithub className= {styles.icons} size={25} color='fff'/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.whatsapp.com/" target="_blank" title="Ir a Youtube" rel='noopener'>
-                    <FaWhatsapp  className= {styles.icons} size={25} color='fff'/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/" target="_blank" title="Ir a Youtube" rel='noopener'>
-                    <FiYoutube className= {styles.icons} size={25} color='fff'/>
-                    </a>
-                </li>
->>>>>>> d0d5303 (Alterações de menu de links e page do links):src/components/SocialMedia.tsx
-            </ul >
-        </div >
+                {iconesApp.map((iconeApp) => (
+                    <li key={iconeApp.id}>
+                        {iconeApp.id === 0 ? (
+                            <nav>
+                                <NavLink to={iconeApp.urlicone} title={iconeApp.title} rel='noopener noreferrer'>
+                                    <iconeApp.iconemenu className={`${styles.icons} ${styles.iconColor}`} size={25} />
+                                </NavLink>
+                            </nav>
+                        ) : (
+                            <a href={iconeApp.urlicone} target="_blank" title={iconeApp.title} rel='noopener noreferrer'>
+                                <iconeApp.iconemenu className={`${styles.icons} ${styles.iconColor}`} size={25} />
+                            </a>
+                        )}
+                    </li>
+                ))}
+            </ul>
+        </div>
     );
 }
-
