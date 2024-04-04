@@ -1,6 +1,6 @@
 .redesPortafolio {
     position: fixed;
-    right: 0;
+    right: calc((100% - 1200px) / 2);
     top: 50%;
     transform: translateY(-50%);
     width: 3rem;
@@ -65,5 +65,12 @@ ul {
     .redesPortafolio {
         width: 2.5rem;
         height: 15rem;
+        /* position: fixed;    
+        top: 0; 
+        right: 0;
+        left: calc(100% - 48.75rem);
+        margin: auto;
+        transform: translateY(0);
+        width: 100%; */
     }
 }
