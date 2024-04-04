@@ -10,10 +10,10 @@ export function Menu () {
                 <NavLink to='/' title='Home'>
                     <span>Home</span>
                 </NavLink>
-                <NavLink to='/trabalhos' title='meus trabalho'>
+                <NavLink to='/trabalhos' title='Meus trabalho'>
                     <span>Meus trabalhos</span>
                 </NavLink>
-                <NavLink to='/contato' title='contato'>
+                <NavLink to='/contato' title='Contato'>
                     <span>Contato</span>
                 </NavLink>
             </nav>

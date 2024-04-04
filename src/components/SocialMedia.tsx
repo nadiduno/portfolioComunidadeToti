@@ -1,7 +1,8 @@
 /* eslint-disable react/react-in-jsx-scope */
 import { NavLink } from 'react-router-dom';
 import { IconType } from 'react-icons';
-import { FiHome, FiGithub, FiFacebook, FiInstagram, FiLinkedin, FiYoutube } from 'react-icons/fi';
+import { FiHome, FiLinkedin } from 'react-icons/fi';
+import { FaWhatsapp } from 'react-icons/fa'
 import styles from './SocialMedia.module.css';
 
 interface IconeAppType {
@@ -15,38 +16,20 @@ const iconesApp: IconeAppType[] = [
     {
         id: 0,
         iconemenu: FiHome,
-        title: 'Ir a Home',
+        title: 'Home',
         urlicone: '/'
     },
     {
         id: 1,
         iconemenu: FiLinkedin,
-        title: 'Ir a Linkedin',
+        title: 'Linkedin',
         urlicone: 'https://www.linkedin.com/'
     },
     {
         id: 2,
-        iconemenu: FiInstagram,
-        title: 'Ir a Instagram',
-        urlicone: 'https://www.instagram.com/'
-    },
-    {
-        id: 3,
-        iconemenu: FiFacebook,
-        title: 'Ir a Facebook',
-        urlicone: 'https://www.facebook.com/'
-    },
-    {
-        id: 4,
-        iconemenu: FiYoutube,
-        title: 'Ir a Youtube',
-        urlicone: 'https://www.youtube.com/'
-    },
-    {
-        id: 5,
-        iconemenu: FiGithub,
-        title: 'Ir a Github',
-        urlicone: 'https://github.com/'
+        iconemenu: FaWhatsapp,
+        title: 'WhatsApp',
+        urlicone: 'https://api.whatsapp.com/send?phone=559288441399&text=Olá%21%20Gostaria%20de%20falar%20contigo.' 
     }
 ]
 
