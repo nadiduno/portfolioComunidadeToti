@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { Buttons, type ButtonAppType } from './Buttons';
 import styles from './ProjectMain.module.css'
 

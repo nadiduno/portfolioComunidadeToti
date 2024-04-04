@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { NavLink } from 'react-router-dom'
 import { CardProject, CardAppType } from './CardProject'
 import styles from './CardProjectSeconds.module.css'
@@ -30,11 +31,11 @@ export function CardProjectSeconds () {
 
     return(
         <div className={styles.containercard}>
-            {cardsApp.map((cardApp) => (
-                <NavLink key={cardApp.id} to={`/trabalhos#${cardApp.id + 1}`} title={cardApp.title}>
-                    <CardProject cardApp={cardApp} />
-                </NavLink>
-            ))}
+        {cardsApp.map((cardApp) => (
+            <NavLink key={cardApp.id} to={`/trabalhos#${cardApp.id + 1}`} title={cardApp.title} aria-label={cardApp.title}>
+                <CardProject cardApp={cardApp} />
+            </NavLink>
+        ))}
         </div>
     )
 }

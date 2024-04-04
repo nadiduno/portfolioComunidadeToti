@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { ContainerLink } from '../components/ContainerLink';
 import { FooterLink } from '../components/FooterLink';
 import { Menu } from '../components/Menu';

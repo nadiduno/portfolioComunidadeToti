@@ -9,7 +9,7 @@ body {
 }
 
 .containerLinkHome{
-    background-color: #000;
+    background-color: var(--color2);
 }
 .containerLink {
     display: flex;
@@ -17,7 +17,7 @@ body {
     align-items: center;
     height: 100vh;
     width: 100%;
-    background-color: #000;    
+    background-color: var(--color2);    
 }
 
 .container2 {

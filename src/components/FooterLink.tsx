@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { FooterColab, ColabAppType} from './FooterColab';
 
 import styles from './FooterLink.module.css';
@@ -40,19 +41,19 @@ const colabsApp: ColabAppType[] = [
   
 export function FooterLink() {
     return (
-      <footer className={styles.container}>
-      <div className={styles.collaborators}> 
-          {colabsApp.map((colabApp) => (
-              <div key={colabApp.id} className={styles.collaboratorscenter}>
-                  <FooterColab colabApp={colabApp} />
-              </div>
-          ))}
-      </div>    
-      <div className={styles.spacefont}>
-          <p>Colaboradores do site - © 2024</p> 
-          <p className={styles.pipespan}></p>
-          <p>Embaixadores da <a href="https://totidiversidade.com.br/" target="_blank" className={styles.fontlink}>Toti Diversidade</a></p> 
-      </div>
-  </footer>
+          <footer className={styles.container}>
+            <div className={styles.collaborators}>
+                {colabsApp.map((colabApp) => (
+                    <div key={colabApp.id} className={styles.collaboratorscenter}>
+                        <FooterColab colabApp={colabApp} />
+                    </div>
+                ))}
+            </div>
+            <div className={styles.spacefont}>
+                <p>Colaboradores do site - © 2024</p>
+                <p className={styles.pipespan}></p>
+                <p>Embaixadores da <a href="https://totidiversidade.com.br/" target="_blank" rel="noopener noreferrer" className={styles.fontlink}>Toti Diversidade</a></p>
+            </div>
+          </footer>
     );
 }

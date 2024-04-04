@@ -1,4 +1,4 @@
-import React from 'react';
+/* eslint-disable react/react-in-jsx-scope */
 import ReactApexChart from 'react-apexcharts';
 // import styles from './GraphicMath.module.css'
 

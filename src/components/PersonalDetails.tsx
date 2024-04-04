@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import styles from './PersonalDetails.module.css'
 
 export function PersonalDetails () {

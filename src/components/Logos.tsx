@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { useEffect, useState } from 'react';
 
 import logopython from '../assets/logoPython.svg';

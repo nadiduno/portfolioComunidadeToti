@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { NavLink } from 'react-router-dom'
 import { IconType } from 'react-icons';
 import {FiHome, FiGithub, FiFacebook, FiInstagram, FiLinkedin, FiYoutube} from 'react-icons/fi'
@@ -6,10 +7,10 @@ import styles from './RedesSociais.module.css'
   
 interface IconeAppType
 {
-      id: number
-      iconemenu: IconType
-      title: string
-      urlicone: string
+    id: number
+    iconemenu: IconType
+    title: string
+    urlicone: string
 }
 
 const iconesApp: IconeAppType[] = [

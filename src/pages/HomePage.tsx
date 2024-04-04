@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { CardProjectSeconds } from '../components/CardProjectSeconds'
 import { ContainerHome } from '../components/ContainerHome'
 import { ContainerLink } from '../components/ContainerLink'
@@ -24,11 +25,11 @@ export function HomePage () {
             <div>
                 <RedesSociais />
             </div>
-            <div className={styles.containerLinkHome}>
-                <ContainerLink />
-            </div>
             <div className={styles.container2}>
                 <CardProjectSeconds  />
+            </div>
+            <div className={styles.containerLinkHome}>
+                <ContainerLink />
             </div>
             <footer className={styles.footersocial}>
                 <FooterLink />

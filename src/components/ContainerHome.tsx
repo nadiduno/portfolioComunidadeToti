@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { PersonalDetails } from './PersonalDetails'
 import { Photo } from './Photo'
 import { ProjectMain, ProjectAppType} from './ProjectMain'

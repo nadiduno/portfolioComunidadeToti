@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { NavLink } from 'react-router-dom';
 import { IconType } from 'react-icons';
 import { FiHome, FiGithub, FiFacebook, FiInstagram, FiLinkedin, FiYoutube } from 'react-icons/fi';

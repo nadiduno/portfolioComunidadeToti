@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { ProjectMain, ProjectAppType } from './ProjectMain'
 
 import styles from './ContainerJob.module.css'
@@ -41,17 +42,17 @@ const projectsApp: ProjectAppType[] = [
 export function ContainerJob () {
     return(
         <header className={styles.container}>
-          <h2 className={styles.title}>Meus trabalhos</h2>
-          {projectsApp.map((projectApp) => {
-               return ( 
-                <div className={styles.subsetion}> 
-                  <section key={projectApp.id} id={`${projectApp.id}`}>
-                    <h2 className={styles.caption}>{projectApp.title}</h2>
-                    <ProjectMain key={projectApp.id} projectApp={projectApp} />
-                  </section>                  
-                  </div>
-               )
-          })}
+        <h2 className={styles.title}>Meus trabalhos</h2>
+        {projectsApp.map((projectApp) => {
+            return (
+                <div className={styles.subsetion} key={projectApp.id}>
+                    <section id={`${projectApp.id}`}>
+                        <h2 className={styles.caption}>{projectApp.title}</h2>
+                        <ProjectMain projectApp={projectApp} />
+                    </section>
+                </div>
+            )
+        })}
         </header>
     )
 }

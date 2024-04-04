@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import styles from './CardProject.module.css'
 
 export interface CardAppType
@@ -26,7 +27,7 @@ export function CardProject ({ cardApp }: AppProps) {
                 />   
                 <div className={styles.about}>
                     <h2>{cardApp.descrition}</h2>
-                    <p>{cardApp.about}</p>
+                    {cardApp.about && <p>{cardApp.about}</p>}
                 </div> 
                           
             </div>    

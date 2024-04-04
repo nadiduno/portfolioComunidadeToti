@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { useEffect } from 'react'; 
 
 import { ContainerJob } from '../components/ContainerJob'
@@ -6,6 +7,7 @@ import { Menu } from '../components/Menu'
 import { RedesSociais } from '../components/SocialMedia'
 
 import styles from './HomePage.module.css'
+import { ContainerLink } from '../components/ContainerLink';
 
 export function JobPage() {
     useEffect(() => {
@@ -33,6 +35,9 @@ export function JobPage() {
             </div>
             <div>
                 <RedesSociais />
+            </div>
+            <div className={styles.containerLinkHome}>
+                <ContainerLink />
             </div>
             <footer className={styles.footersocial}>
                 <FooterLink />

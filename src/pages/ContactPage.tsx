@@ -1,4 +1,6 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { ContainerContact } from '../components/ContainerContact'
+import { ContainerLink } from '../components/ContainerLink'
 import { FooterLink } from '../components/FooterLink'
 import { Menu } from '../components/Menu'
 import { RedesSociais } from '../components/SocialMedia'
@@ -15,6 +17,9 @@ export function ContactPage () {
             </div>
             <div>
                 <RedesSociais />
+            </div>
+            <div className={styles.containerLinkHome}>
+                <ContainerLink />
             </div>
             <footer className={styles.footersocial}>
                 <FooterLink />
