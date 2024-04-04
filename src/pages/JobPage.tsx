@@ -7,8 +7,7 @@ import { RedesSociais } from '../components/SocialMedia'
 
 import styles from './HomePage.module.css'
 
-<<<<<<< HEAD
-export function JobPage () {
+export function JobPage() {
     useEffect(() => {
         const hash = window.location.hash; 
         if (hash) {
@@ -23,10 +22,7 @@ export function JobPage () {
             element.scrollIntoView({ behavior: "smooth" });
         }
     }
-  
-=======
-export function JobPage() {
->>>>>>> d0d5303 (Alterações de menu de links e page do links)
+    
     return (
         <>
             <main className={styles.menu}>

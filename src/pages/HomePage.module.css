@@ -37,13 +37,8 @@ body {
 
 .cover {
     width: 100%;
-<<<<<<< HEAD
     object-fit:cover;
     opacity: 0.6;
-=======
-    object-fit: cover;
-    opacity: 0.3;
->>>>>>> d0d5303 (Alterações de menu de links e page do links)
 }
 
 .footersocial {
