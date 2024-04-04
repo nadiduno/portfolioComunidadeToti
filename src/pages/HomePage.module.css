@@ -7,6 +7,19 @@ body {
     position: relative;
     z-index: 0;
 }
+
+.containerLinkHome{
+    background-color: #000;
+}
+.containerLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #000;    
+}
+
 .container2 {
     background-color: var(--color2);
     display: grid;
@@ -15,20 +28,24 @@ body {
     padding: 2rem;
 }
 
-.imagebackground{
+.imagebackground {
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
     position: absolute;
     z-index: -1;
 }
 
-.cover{
+.cover {
     width: 100%;
+<<<<<<< HEAD
     object-fit:cover;
     opacity: 0.6;
+=======
+    object-fit: cover;
+    opacity: 0.3;
+>>>>>>> d0d5303 (Alterações de menu de links e page do links)
 }
 
-.footersocial{
+.footersocial {
     background-color: var(--color3);
 }
-

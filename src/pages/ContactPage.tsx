@@ -1,7 +1,7 @@
 import { ContainerContact } from '../components/ContainerContact'
 import { FooterLink } from '../components/FooterLink'
 import { Menu } from '../components/Menu'
-import { RedesSociais } from '../components/RedesSociais'
+import { RedesSociais } from '../components/SocialMedia'
 import styles from './HomePage.module.css'
 
 export function ContactPage () {
