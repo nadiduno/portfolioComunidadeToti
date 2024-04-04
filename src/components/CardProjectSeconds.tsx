@@ -30,16 +30,11 @@ export function CardProjectSeconds () {
 
     return(
         <div className={styles.containercard}>
-            
-            {cardsApp.map((cardApp) => {
-                return( 
-                    <nav>
-                        <NavLink to={`/trabalhos#${cardApp.id+1}`} title={cardApp.title}>
-                            <CardProject key={cardApp.id} cardApp={cardApp} />
-                        </NavLink>
-                    </nav>
-                )
-            })}
+            {cardsApp.map((cardApp) => (
+                <NavLink key={cardApp.id} to={`/trabalhos#${cardApp.id + 1}`} title={cardApp.title}>
+                    <CardProject cardApp={cardApp} />
+                </NavLink>
+            ))}
         </div>
     )
 }

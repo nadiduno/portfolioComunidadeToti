@@ -40,22 +40,19 @@ const colabsApp: ColabAppType[] = [
   
 export function FooterLink() {
     return (
-        <footer className={styles.container}>
-            <div className={styles.collaborators}> 
-                {colabsApp.map((colabApp) => {
-                        return(
-                          <div className={styles.collaboratorscenter}>
-                              <FooterColab key={colabApp.id} colabApp={colabApp} />
-                          </div>
-                        )
-                })}
-            </div>    
-            <div className={styles.spacefont}>
-                <p>Colaboradores do site - © 2024</p> 
-                <p className={styles.pipespan}></p>
-                <p>Embaixadores da <a href="https://totidiversidade.com.br/" target="_blank" className={styles.fontlink}>Toti Diversidade</a></p> 
-            </div>
-
-        </footer>
+      <footer className={styles.container}>
+      <div className={styles.collaborators}> 
+          {colabsApp.map((colabApp) => (
+              <div key={colabApp.id} className={styles.collaboratorscenter}>
+                  <FooterColab colabApp={colabApp} />
+              </div>
+          ))}
+      </div>    
+      <div className={styles.spacefont}>
+          <p>Colaboradores do site - © 2024</p> 
+          <p className={styles.pipespan}></p>
+          <p>Embaixadores da <a href="https://totidiversidade.com.br/" target="_blank" className={styles.fontlink}>Toti Diversidade</a></p> 
+      </div>
+  </footer>
     );
 }

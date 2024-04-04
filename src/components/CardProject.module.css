@@ -13,8 +13,6 @@
     display: flex;
     grid-template-rows: 1fr auto;
     align-items: center;
-    box-shadow: var(--color3);
-    background: var(--color5);
     box-shadow: 0 0 30px var(--color3),
     0 0 2px var(--color3), 0 0 1px var(--color3),
     0 0 1px var(--color3), 0 0 2px var(--color3);

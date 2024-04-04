@@ -1,32 +1,29 @@
 .redesPortafolio {
     position: fixed;    
-    right: 0;
-    top: 50%;
     right: calc((100% - 1200px) / 2);
+    top: 50%; 
     z-index: 99;
     width: 40px;
-    max-width: calc(100% - 40px); 
-    height: 260px;
+    max-width: calc(100% - 40px);
+    height: 260px; 
     margin-top: -110px; 
-    padding: 30px;
-    display: flex;
+    padding: 30px; 
+    display: flex; 
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-between;
     box-shadow: -4px 0px var(--color3);
-    border-radius: 40px 0 0 40px;
-    gap: 3rem;
+    border-radius: 40px 0 0 40px; 
+    gap: 3rem; 
 }
 .listinline {
     padding-left: 0;
     list-style: none;
     margin-left: -5px;
 }
-ul, ol {
+ul {
     margin-top: 0;
     margin-bottom: 11px;
-}
-ul {
     display: block;
     list-style-type: disc;
     margin-block-start: 1em;
@@ -46,4 +43,16 @@ li:first-child{
 
 .iconColor {
     color: var(--color1);
-  }
+}
+/* 
+@media only screen and (max-width: 768px) {
+    .redesPortafolio {
+        position: fixed;    
+        top: 0; 
+        right: 0;
+        left: calc(100% - 48.75rem);
+        margin: auto;
+        transform: translateY(0);
+        width: 100%;
+    }
+} */
