@@ -4,8 +4,8 @@
     display: flex;
     align-items: end;
     justify-content: center;
-    animation: slideAnimation 3s ease forwards;
-    animation-delay: calc(.1s 3 var(--color1));
+    animation: slideAnimation 1s ease forwards;
+    animation-delay: calc(.3s var(--color1));
 
 }
 

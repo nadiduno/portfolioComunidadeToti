@@ -14,7 +14,7 @@
     display: flex;
     grid-template-rows: 1fr auto;
     align-items: center;
-    box-shadow: 0 0 30px var(--color3),
+    box-shadow: 0 0 20px var(--color3),
     0 0 2px var(--color3), 0 0 1px var(--color3),
     0 0 1px var(--color3), 0 0 2px var(--color3);
     
@@ -37,7 +37,7 @@
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: linear-gradient(rgba(0,0,0,.70),  rgba(0,0, 0, 20));
+    background: linear-gradient(rgba(0,0,0,.30),  rgba(0,0, 0, 20));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,13 +59,4 @@
 
 
 
-@keyframes slideAnimation{
-    0%{
-        opacity: 0;
-        transform: translateY(100px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+

@@ -6,9 +6,7 @@
     justify-content: end;
     padding-right: 8rem;
     gap: 1.5rem;
-    background-color: var(--color2);
-    animation: slideAnimation 3s ease forwards;
-    animation-delay: calc(.1s 3 var(--color1));
+    background-color: var(--color2);   
     
 }
 
@@ -17,7 +15,11 @@
     filter: drop-shadow(0 0 .75em var(--color3));
     
 }
+.menu span{
+    animation: slideAnimation 1s ease forwards;
+    animation-delay: calc(.3s * var(--color3));
 
+}
 
  
     
@@ -30,6 +32,7 @@ span{
 span:hover{
     text-decoration: none;
     opacity: 0.7;
+    
 }
 
 @media only screen and (max-width: 768px) {
