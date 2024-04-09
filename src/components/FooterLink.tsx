@@ -21,7 +21,7 @@ const colabsApp: ColabAppType[] = [
       {
         id: 2,
         title: 'Manuel Bernardo',
-        descrition: 'Homem preto aparentemente de 25 anos, camisa branca e terno, cabelo cacheado preto, fundo de escritorio',
+        descrition: 'Homem preto com tom de pele marrom aparentemente 25 anos de idade, camisa branca, cabelos crespo preto, fundo branco e castanho',
         url: 'https://www.linkedin.com/in/manuel-bernardo-165373208/',
         urlphoto: 'https://github.com/ManueBernardo.png'
       },
