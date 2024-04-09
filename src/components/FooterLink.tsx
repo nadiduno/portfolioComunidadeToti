@@ -35,7 +35,7 @@ const colabsApp: ColabAppType[] = [
       {
         id: 4,
         title: 'Yurisay Martinez',
-        descrition: 'Mulher branca aparentemente com 35 anos, com camisa preta, cabelo preto, sorrindo e com pose empoderada. No fundo um morro',
+        descrition: 'Mulher branca aparentemente de 35 anos, com camisa preta, cabelo preto, sorrindo e com pose empoderada. No fundo um morro',
         url: 'https://www.linkedin.com/in/yurisay-martinez/',
         urlphoto: 'https://github.com/yurisaym.png'
       }
