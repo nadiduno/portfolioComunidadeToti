@@ -4,13 +4,19 @@
     gap: 2.5em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    animation: slideAnimation 5s ease forwards;
+    animation-delay: calc(.1s 3 var(--color1)); 
 }
 
 .containercard span{
     color: var(--color3);
     font-size: 35px;
+     
+    
     
 }
+
+
 
 @media only screen and (max-width: 768px) {
     .containercard{
@@ -22,3 +28,18 @@
         font-size: 20px;   
     }    
 }
+
+
+@keyframes slideAnimation{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+

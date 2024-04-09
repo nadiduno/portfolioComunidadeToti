@@ -7,16 +7,25 @@
     padding-right: 8rem;
     gap: 1.5rem;
     background-color: var(--color2);
+    animation: slideAnimation 3s ease forwards;
+    animation-delay: calc(.1s 3 var(--color1));
+    
 }
 
 .menu span:hover{
     text-decoration: none;
     filter: drop-shadow(0 0 .75em var(--color3));
+    
 }
+
+
+ 
+    
 
 span{
     color: var(--color1);
     opacity: 1;
+
 }
 span:hover{
     text-decoration: none;
@@ -30,3 +39,15 @@ span:hover{
         padding-right: 0;
     }
 } 
+
+@keyframes slideAnimation{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

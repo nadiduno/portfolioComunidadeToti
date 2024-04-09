@@ -5,6 +5,8 @@
     justify-content:center;
     flex-direction: column;
     padding: 2rem;
+    animation: slideAnimation 3s ease forwards;
+    animation-delay: calc(.1s 3 var(--color1));
 }
 
 .collaborators {
@@ -70,4 +72,15 @@
     .pipespan::after {
         content: none;
     }        
+}
+
+@keyframes slideAnimation{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

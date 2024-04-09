@@ -2,6 +2,7 @@
     width: 100%;
     display: grid;
     margin: auto;
+    
 }
 
 .wrapper{
@@ -9,6 +10,8 @@
     display: flex;
     justify-content: space-between;
     padding: 0 3.5rem 1.5rem;
+    animation: slideAnimation 3s ease forwards;
+    animation-delay: calc(.1s 8 var(--color1));
 }
 
 .verticalline{
@@ -16,12 +19,15 @@
     background-color: var(--color1);
     height: 1px;
     width: 100%;
+    
 }
 
 .projects{
     display: grid;
     align-items: center;
     padding: 3.5rem;
+    animation: slideAnimation 5s ease forwards;
+    animation-delay: calc(.1s 8 var(--color1));
 }
 
 .caption{
@@ -51,3 +57,14 @@
         padding: 4rem 0 1.5rem 0;
     }    
 } 
+
+@keyframes slideAnimation{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

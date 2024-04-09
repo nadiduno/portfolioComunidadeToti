@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     gap: 2rem;
     padding-bottom: 3rem;
+    
 }
 
 .CardProject {
@@ -16,6 +17,7 @@
     box-shadow: 0 0 30px var(--color3),
     0 0 2px var(--color3), 0 0 1px var(--color3),
     0 0 1px var(--color3), 0 0 2px var(--color3);
+    
 }
 
 .cover{
@@ -26,6 +28,7 @@
     animation-delay: .2s;
     transition: brackground 0.5s, transform 0.5s ;
     border: 2px solid var(--color3);
+    
 }
 .about{
     position: absolute;
@@ -52,4 +55,17 @@
 }
 .CardProject:hover .about{
     opacity: 1;   
+}
+
+
+
+@keyframes slideAnimation{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
